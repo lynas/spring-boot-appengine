@@ -16,8 +16,8 @@
 #
 # This sample has manual_scaling set to 1.
 #
-runtime: java
-env: flex
+runtime: java8
+env: standard
 
 runtime_config:  # Optional
   jdk: openjdk8
