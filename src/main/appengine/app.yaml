@@ -13,19 +13,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # [END_EXCLUDE]
+#
+# This sample has manual_scaling set to 1.
+#
+runtime: java
+env: flex
 
-# [START runtime]
-runtime: java8
-env: standard
+runtime_config:  # Optional
+  jdk: openjdk8
 
 handlers:
 - url: /.*
   script: this field is required, but ignored
 
-runtime_config:  # Optional
-  jdk: openjdk8
-  server: jetty9
-
 manual_scaling:
   instances: 1
-# [END runtime]
